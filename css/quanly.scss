@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+}
+img {
+  display: block;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.inner__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: #E5E5E5;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  .header {
+    background-color: #000;
+    .container {
+      .inner__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 100px;
+        .header__right {
+          padding: 50px 0;
+          .menu {
+            display: flex;
+            gap: 100px;
+            .header__menu-items {
+              display: flex;
+              align-items: center;
+              transition: all 0.3s ease;
+              &:hover {
+                > a {
+                  color: #FFC043;
+                }
+              }
+              > a {
+                display: flex;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                &.active {
+                  color: #FFC043;
+                }
+              }
+              .items__img {
+                width: 23px;
+                height: 23px;
+                margin-left: 10px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                } 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .login {
+    width: 780px;
+    height: 463px;
+    background-color: rgba(38, 40, 41, 0.9);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px 100px 40px 100px;
+    .login__title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .login__input {
+      margin: 45px 0;
+      > p {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+      input {
+        width: 100%;
+        background-color: #D9D9D9;
+        border-radius: 5px;
+        padding: 10px 20px;
+        outline: none;
+      }
+    }
+    .login__btn {
+      padding: 10px 20px;
+      background-color: #FFC043;
+      font-size: 20px;
+      font-weight: 600;
+      display: inline-block;
+      border-radius: 10px;
+      color: #000;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .main {
+    .search-text {
+      display: flex;
+      justify-content: right;
+      padding-top: 48px;
+      padding-right: 100px;
+      input {
+        width: 745px;
+        padding: 16px 30px;
+        background: transparent;
+        border-radius: 50px;
+        border: 1px solid #000;
+        outline: none;
+      }
+      ::placeholder {
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        color: #000;
+      }
+    }
+    h1 {
+      color: #000;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 30px 0;
+    }
+    .main__table {
+      max-width: 1910px;
+      width: 100%;
+      padding: 0 5px;
+      table {
+        width: 100%;
+        border-spacing: 0;
+        thead {
+          tr {
+            th {
+              background-color: #FFC043;
+              color: #000;
+              font-weight: 600;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              height: 47px;
+              input {
+                background-color: #D9D9D9;
+                padding: 5px 20px;
+                width: 80%;
+                border-radius: 3px;
+                border: none;
+                outline: none;
+              }
+              ::placeholder {
+                color: #000;
+                font-size: 14px;
+                text-align: center;
+              }
+              .d-flex {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                > img {
+                  margin: 0 12px;
+                  cursor: pointer;
+                }
+              }
+            }
+            &:last-child {
+              td {
+                border-bottom: 2px solid #565656;
+                line-height: 1;
+              }
+            }
+          }
+        }
+        td, th {
+          height: 47px;
+          line-height: 47px;
+          border: 2px solid #565656;
+          border-right: none;
+          border-bottom: none;
+          color: #000;
+          font-weight: 400;
+          &:last-child {
+            border-right: 2px solid #565656;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.banner {
+  width: 100%;
+  height: 100vh;
+}
